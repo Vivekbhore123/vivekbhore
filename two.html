@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // let i=0;
+    //  var x= document.getElementById("perform");
+    //  x.style.backgroundColor = "blueviolet";
+  </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav" style="font-size: 1;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 1;">&times;
+        <!-- <span class="caret"></span> -->
+      </a>
+      <a href="#">About</a>
+      <a href="#"> share</a>
+      <a href="#">Activity</a>
+      <a href="#">Setting</a>
+      <a href="#">Contact</a>
+    </div>
+    <!-- &#9776;  -->
+
+
+<div id="perform">
+
+   <div style="position: sticky;" onclick="final();myFunction(this);" class="container">
+        <div
+        class="btn btn-primary dropdown-toggle moveit mm bar1"
+        type="button"
+        id="dropdownMenu1"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="true"
+      >
+        
+      </div>
+      <div
+        class="btn btn-primary dropdown-toggle moveit nn bar2"
+        type="button"
+        id="dropdownMenu1"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="true"
+      >
+        
+      </div>
+      <div
+        class="btn btn-primary dropdown-toggle moveit oo bar3"
+        type="button"
+        id="dropdownMenu1"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="true"
+      >
+        
+      </div>
+      </div>
+
+
+      <h1>
+        <ul class="mba">
+    </li>
+          <li style="color: white; margin-top:100px ;"><b>Sharing</b></li>
+          <li style="color: white;margin-top:35px ;"><b>Activity</b></li>
+          <li style="color: white;margin-top:35px ;"><b>Setting</b></li>
+          <li style="color: white;margin-top:35px ;"><b>Contact</b></li>
+        </ul>
+      </h1>
+    </div>
+
+
+
+    <div style="position:relative;top: 30px;left: 30px;">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav(); final();myFunction(this)">
+        <i class="fas fa-bars"></i>
+      <div class="container">
+        <div
+        class="btn btn-primary dropdown-toggle moveit mm bar1"
+        type="button"
+        id="dropdownMenu1"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="true"
+      >
+        
+      </div>
+      <div
+        class="btn btn-primary dropdown-toggle moveit nn bar2"
+        type="button"
+        id="dropdownMenu1"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="true"
+      >
+        
+      </div>
+      <div
+        class="btn btn-primary dropdown-toggle moveit oo bar3"
+        type="button"
+        id="dropdownMenu1"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="true"
+      >
+        
+      </div>
+      </div>
+    </span>
+    </div>
+
+    
+
+    <script>
+      let i=0;
+    
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+      var x= document.getElementById("perform");
+          x.style.display = "none";
+
+
+  var x = document.getElementById("perform");
+      function final() {
+         if(i==8)
+        {
+         i=0;
+            
+        }
+          i++;
+        console.log("from final");        
+         if(i==1 || i==2 || i==3 || i==4)
+         {
+           if(i==1 || i==2)
+         {
+          x.style.backgroundColor ="blueviolet";
+          }
+            if(i==3 || i==4 || i==5)
+         {
+          x.style.backgroundColor ="red";
+          }
+        //    if(i==3)
+        //  {
+        //   x.style.backgroundColor ="blueviolet";
+        //   }
+          
+            if (x.style.display == "none") {
+            x.style.display = "block";
+            console.log(i)
+            i--;
+          } else {
+            x.style.display = "none";
+          }
+         }
+        
+      }
+
+      function openNav() {
+        if(i==8)
+        {
+         i=0;
+            
+        }
+        if (i>=4) {
+          var x= document.getElementById("perform");
+          x.style.display = "none";
+          document.getElementById("mySidenav").style.width = "100%";
+          console.log("from opennav"+i);  
+          // i++;
+          if(i==7)
+          x.style.backgroundColor = "blueviolet";
+          
+          }
+          
+         }
+ 
+      function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+          if(i==0){
+          var x= document.getElementById("perform");
+          x.style.backgroundColor = "blueviolet";
+          }
+       
+         var x= document.getElementById("perform");
+         console.log("from closenav"+i);  
+         x.style.display = "none";
+         i++;
+        // if(i==7)
+        // {
+        //   i=0;
+            
+        // }
+         
+        
+      }
+    </script>
+  </body>
+</html>
